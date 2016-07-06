@@ -10,7 +10,7 @@ var less=require('gulp-less');
 // });
 
 gulp.task('less',function(){
-	return gulp.src('./src/index2.less')
+	return gulp.src('./src/*.less')
 	.pipe((less())
 	.pipe(gulp.dest('./build'));
 	// console.log('less ok')
